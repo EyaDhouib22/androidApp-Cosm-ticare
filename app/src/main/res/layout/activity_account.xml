@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon Compte"
+                android:textColor="@color/primaryColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingTop="100dp"
+                android:paddingBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/circle_background" />
+
+
+
+            <TextView android:text="Prénom :" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/textViewPrenom" style="@style/ProfileValue"/>
+
+            <TextView android:text="Nom :" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/textViewNom" style="@style/ProfileValue"/>
+
+            <TextView android:text="Email :" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/textViewEmail" style="@style/ProfileValue"/>
+
+            <TextView android:text="Téléphone :" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/textViewTelephone" style="@style/ProfileValue"/>
+
+            <TextView android:text="Adresse :" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/textViewAdresse" style="@style/ProfileValue"/>
+
+            <Button
+                android:id="@+id/buttonFavoris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voir les Favoris"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/primaryColor"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Déconnecter"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/primaryColor"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

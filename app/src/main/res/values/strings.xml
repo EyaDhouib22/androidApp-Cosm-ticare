@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CosmétiCare</string>
+    <string name="description">CosmétiCare est votre destination idéale pour acheter des produits cosmétiques en ligne en Tunisie, alliant qualité et prix compétitifs. Nous proposons une large gamme de soins pour le visage, le corps et les cheveux, avec des produits soigneusement sélectionnés pour leur efficacité et leur accessibilité. Notre application vous permet de découvrir des marques locales et internationales, avec un excellent rapport qualité-prix. Profitez d’une expérience de vente en ligne pratique, sécurisée, et de conseils personnalisés pour sublimer votre beauté. CosmétiCare est là pour répondre à tous vos besoins cosmétiques, tout en garantissant une livraison rapide et fiable à travers toute la Tunisie.</string>
+    <string name="button">Retour</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+</resources>
